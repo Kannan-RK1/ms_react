@@ -29,7 +29,6 @@ export const classNames = [
   "Racers",
   "Racers and Cruisers",
   "Runabouts",
-  "Runabouts",
   "Saltwater Fishing",
   "Schooner",
   "Sloop",

@@ -19,6 +19,8 @@ import NewsDetails from "./Pages/newsDetails";
 import NewsDetails1 from "./Pages/newsDetails1";
 import MarketingPolicy from "./Pages/MarketingPolicy";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+//import Advertisement from "./Pages/Advertisement";
+import NewsDetails2 from "./Pages/newsDetails2";
 
 function App() {
   const ScrollToTop = () => {
@@ -53,8 +55,10 @@ function App() {
           <Route path="/news&events" element={<NewsEvents />} />
           <Route path="/newsDetails/aug28" element={<NewsDetails />} />
           <Route path="/newsDetails/aug3" element={<NewsDetails1 />} />
+          <Route path="/newsDetails/feb24" element={<NewsDetails2 />} />
           <Route path="/marketing-policy" element={<MarketingPolicy />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          {/* <Route path="/ads" element={<Advertisement />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>

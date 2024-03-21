@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Alert, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Express_URL from "../Components/Express_URL";
-
+import { Adsense } from "@ctrl/react-adsense";
 import Navbar from "../Components/Navbar";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -219,14 +219,14 @@ const Lujo = () => {
                 cockpit, with optional increased fuel capacity for extended
                 runs. Three captains chairs provide the ultimate command center.
               </p>
-              <div>
+              {/* <div>
                 <button
                   className="btn custom-contact-btn fs-18px text-white"
                   type="submit"
                 >
                   <i class="fa-solid fa-image"></i> Gallery
                 </button>
-              </div>
+              </div> */}
             </Col>
           </Row>
         </Container>
@@ -288,28 +288,43 @@ const Lujo = () => {
                 </Col>
                 {/* Display advertisement after the 3rd card */}
                 {index === 2 && (
-                  <Col xs={12} md={6} lg={4} key="advertisement">
-                    <div
-                      class="border-0 py-4 rounded-2 bg-white"
-                      style={{
-                        boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
-                      }}
-                    >
+                  <>
+                    <Col xs={12} md={6} lg={4} key="advertisement">
                       <div
+                        class="border-0 rounded-2 pt-2 pb-3 bg-white"
                         style={{
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
+                          boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
                         }}
                       >
-                        <img
-                          src="https://www.megasails.com/home-src/images/Megasaila_iKon-01.gif"
-                          alt="Advertisement"
-                          height={"305px"} // Adjust the height of the image as needed
-                        />
+                        <div className="">
+                          <small
+                            className="text-start"
+                            style={{ paddingLeft: "32px", fontSize: "12px" }}
+                          >
+                            Advertisement
+                          </small>
+                          <div className="text-center">
+                            {/* <img
+                            src="https://ayg.s3.us-east-2.amazonaws.com/ikon.gif"
+                            alt="Advertisement"
+                            height={"300px"} // Adjust the height of the image as needed
+                            width={"auto"}
+                          /> */}
+                            <Adsense
+                              client="ca-pub-6409212221098617"
+                              slot="4454213038"
+                              style={{
+                                width: 300,
+                                height: 300,
+                                float: "center",
+                              }}
+                              format=""
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </Col>
+                    </Col>
+                  </>
                 )}
               </>
             ))}
@@ -325,42 +340,42 @@ const Lujo = () => {
           <h5 class="fw-bold fs-4 lh-sm py-3">EXPLORE OTHER HCB MODELS</h5>
           <Row className="g-3">
             <Col xs={12} md={6} lg={3}>
-              <img
-                class="img-fluid"
-                src="https://hcbyachts.com/wp-content/uploads/2021/12/siesta3.jpeg"
-                alt="39"
-              />
               <Link onClick={handleClick} to={`/39-speciale`}>
+                <img
+                  class="img-fluid"
+                  src="https://hcbyachts.com/wp-content/uploads/2021/12/siesta3.jpeg"
+                  alt="39"
+                />
                 <p class="fw-bold py-2 text-primary-emphasis">39 SPECIALE</p>
               </Link>
             </Col>
             <Col xs={12} md={6} lg={3}>
-              <img
-                class="img-fluid"
-                src="https://hcbyachts.com/wp-content/uploads/2022/02/s-QfSWeg.jpg"
-                alt="48"
-              />
               <Link onClick={handleClick} to={`/48-campeon`}>
+                <img
+                  class="img-fluid"
+                  src="https://hcbyachts.com/wp-content/uploads/2022/02/s-QfSWeg.jpg"
+                  alt="48"
+                />
                 <p class="fw-bold py-2 text-primary-emphasis">48 CAMPEON</p>
               </Link>
             </Col>
             <Col xs={12} md={6} lg={3}>
-              <img
-                class="img-fluid"
-                src="https://hcbyachts.com/wp-content/uploads/2022/02/DJI_0075.jpg"
-                alt="53"
-              />
               <Link onClick={handleClick} to={`/53-suenos`}>
+                <img
+                  class="img-fluid"
+                  src="https://hcbyachts.com/wp-content/uploads/2022/02/DJI_0075.jpg"
+                  alt="53"
+                />
                 <p class="fw-bold py-2 text-primary-emphasis">53 SUENOS</p>
               </Link>
             </Col>
             <Col xs={12} md={6} lg={3}>
-              <img
-                class="img-fluid"
-                src="https://hcbyachts.com/wp-content/uploads/2021/12/6500001-scaled-1.jpeg"
-                alt="65"
-              />
               <Link onClick={handleClick} to={`/65-estrella`}>
+                <img
+                  class="img-fluid"
+                  src="https://hcbyachts.com/wp-content/uploads/2021/12/6500001-scaled-1.jpeg"
+                  alt="65"
+                />
                 <p class="fw-bold py-2 text-primary-emphasis">65 ESTRELLA</p>
               </Link>
             </Col>

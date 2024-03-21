@@ -51,167 +51,169 @@ const HCB = () => {
         <Container fluid>
           <Row className="g-3 py-3">
             <Col xs={12} md={6} lg={6}>
-              <Card className="rounded-0 border-0 p-lg-4 bg-secondary">
-                <Card.Body>
-                  <Card.Title className="text-center fw-bold text-white">
-                    CAMPEÓN
-                  </Card.Title>
-                  <Card.Text className="text-center text-white fs-18px">
-                    Equipped with the latest technological advancements, it
-                    offers you a seamless and unparalleled boating experience.
-                  </Card.Text>
-                  <Card.Text className="text-center text-white  fs-18px">
-                    <Link to={`/48-campeon`} className=" text-white fw-bold">
+              <Link to={`/48-campeon`} className=" text-white fw-bold">
+                <Card className="rounded-0 border-0 p-lg-4 bg-secondary">
+                  <Card.Body>
+                    <Card.Title className="text-center fw-bold text-white">
+                      CAMPEÓN
+                    </Card.Title>
+                    <Card.Text className="text-center text-white fs-18px">
+                      Equipped with the latest technological advancements, it
+                      offers you a seamless and unparalleled boating experience.
+                    </Card.Text>
+                    <Card.Text className="text-center text-white  fs-18px">
                       Learn More{"  "}
                       <i class="fa-solid fa-angles-right"></i>
-                    </Link>
-                  </Card.Text>
-                </Card.Body>
-                <Card.Img
-                  className="py-lg-4"
-                  variant="bottom"
-                  src="https://hcbyachts.com/wp-content/uploads/2023/11/HCB-48-Rendering_White_Side-Transparent-Website-1536x453.png"
-                />
-              </Card>
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Img
+                    className="py-lg-4"
+                    variant="bottom"
+                    src="https://hcbyachts.com/wp-content/uploads/2023/11/HCB-48-Rendering_White_Side-Transparent-Website-1536x453.png"
+                  />
+                </Card>
+              </Link>
             </Col>
 
             <Col xs={12} md={6} lg={6}>
-              <Card className="rounded-0 border-0 p-lg-4">
-                <Card.Body>
-                  <Card.Title className="text-center fw-bold ">
-                    ESTRELLA
-                  </Card.Title>
-                  <Card.Text className="text-center fs-18px">
-                    The world’s largest Center Console, introducing the first
-                    ever Mega Center Console Yacht™
-                  </Card.Text>
-                  <Card.Text className="text-center fs-18px">
-                    <Link
-                      to={`/65-estrella`}
-                      className=" text-dark fw-bold"
-                      onClick={handleClick}
-                    >
+              <Link
+                to={`/65-estrella`}
+                className=" text-dark fw-bold"
+                onClick={handleClick}
+              >
+                <Card className="rounded-0 border-0 p-lg-4">
+                  <Card.Body>
+                    <Card.Title className="text-center fw-bold ">
+                      ESTRELLA
+                    </Card.Title>
+                    <Card.Text className="text-center fs-18px">
+                      The world’s largest Center Console, introducing the first
+                      ever Mega Center Console Yacht™
+                    </Card.Text>
+                    <Card.Text className="text-center fs-18px">
                       Learn More{"  "}
                       <i class="fa-solid fa-angles-right"></i>
-                    </Link>
-                  </Card.Text>
-                </Card.Body>
-                <Card.Img
-                  variant="bottom"
-                  src="https://hcbyachts.com/wp-content/uploads/2022/03/suenos_updated2.jpg"
-                />
-              </Card>
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Img
+                    variant="bottom"
+                    src="https://hcbyachts.com/wp-content/uploads/2022/03/suenos_updated2.jpg"
+                  />
+                </Card>
+              </Link>
             </Col>
 
             <Col xs={12} md={6} lg={6}>
-              <Card className="rounded-0 border-0 p-lg-4">
-                <Card.Body>
-                  <Card.Title className="text-center fw-bold ">
-                    SUEÑOS
-                  </Card.Title>
-                  <Card.Text className="text-center fs-18px">
-                    The sophisticated design to perfectly balance speed, ride,
-                    comfort, and all of the luxury of your “dream” yacht.
-                  </Card.Text>
-                  <Card.Text className="text-center fs-18px">
-                    <Link
-                      to={`/53-suenos`}
-                      className=" text-dark fw-bold"
-                      onClick={handleClick}
-                    >
+              <Link
+                to={`/53-suenos`}
+                className=" text-dark fw-bold"
+                onClick={handleClick}
+              >
+                <Card className="rounded-0 border-0 p-lg-4">
+                  <Card.Body>
+                    <Card.Title className="text-center fw-bold ">
+                      SUEÑOS
+                    </Card.Title>
+                    <Card.Text className="text-center fs-18px">
+                      The sophisticated design to perfectly balance speed, ride,
+                      comfort, and all of the luxury of your “dream” yacht.
+                    </Card.Text>
+                    <Card.Text className="text-center fs-18px">
                       Learn More{"  "}
                       <i class="fa-solid fa-angles-right"></i>
-                    </Link>
-                  </Card.Text>
-                </Card.Body>
-                <Card.Img
-                  variant="bottom"
-                  src="https://hcbyachts.com/wp-content/uploads/2022/03/suenos2.jpg"
-                />
-              </Card>
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Img
+                    variant="bottom"
+                    src="https://hcbyachts.com/wp-content/uploads/2022/03/suenos2.jpg"
+                  />
+                </Card>
+              </Link>
             </Col>
 
             <Col xs={12} md={6} lg={6}>
-              <Card className="rounded-0 border-0 p-lg-4">
-                <Card.Body>
-                  <Card.Title className="text-center fw-bold ">LUJO</Card.Title>
-                  <Card.Text className="text-center fs-18px">
-                    A seamless blend of brawn and refinement which provides
-                    sustained offshore performance and an impeccable ride.
-                  </Card.Text>
-                  <Card.Text className="text-center fs-18px">
-                    <Link
-                      to={`/42-lujo`}
-                      className=" text-dark fw-bold"
-                      onClick={handleClick}
-                    >
+              <Link
+                to={`/42-lujo`}
+                className=" text-dark fw-bold"
+                onClick={handleClick}
+              >
+                <Card className="rounded-0 border-0 p-lg-4">
+                  <Card.Body>
+                    <Card.Title className="text-center fw-bold ">
+                      LUJO
+                    </Card.Title>
+                    <Card.Text className="text-center fs-18px">
+                      A seamless blend of brawn and refinement which provides
+                      sustained offshore performance and an impeccable ride.
+                    </Card.Text>
+                    <Card.Text className="text-center fs-18px">
                       Learn More{"  "}
                       <i class="fa-solid fa-angles-right"></i>
-                    </Link>
-                  </Card.Text>
-                </Card.Body>
-                <Card.Img
-                  variant="bottom"
-                  src="https://hcbyachts.com/wp-content/uploads/2022/04/lujo_updated.jpg"
-                />
-              </Card>
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Img
+                    variant="bottom"
+                    src="https://hcbyachts.com/wp-content/uploads/2022/04/lujo_updated.jpg"
+                  />
+                </Card>
+              </Link>
             </Col>
 
             <Col xs={12} md={6} lg={6}>
-              <Card className="rounded-0 border-0 p-lg-4">
-                <Card.Body>
-                  <Card.Title className="text-center fw-bold ">
-                    SPECIALE
-                  </Card.Title>
-                  <Card.Text className="text-center fs-18px">
-                    Family-friendly center console yacht, with the all of the
-                    desired standard features and comfort you expect from HCB.
-                  </Card.Text>
-                  <Card.Text className="text-center fs-18px">
-                    <Link
-                      to={`/39-speciale`}
-                      className=" text-dark fw-bold"
-                      onClick={handleClick}
-                    >
+              <Link
+                to={`/39-speciale`}
+                className=" text-dark fw-bold"
+                onClick={handleClick}
+              >
+                <Card className="rounded-0 border-0 p-lg-4">
+                  <Card.Body>
+                    <Card.Title className="text-center fw-bold ">
+                      SPECIALE
+                    </Card.Title>
+                    <Card.Text className="text-center fs-18px">
+                      Family-friendly center console yacht, with the all of the
+                      desired standard features and comfort you expect from HCB.
+                    </Card.Text>
+                    <Card.Text className="text-center fs-18px">
                       Learn More{"  "}
                       <i class="fa-solid fa-angles-right"></i>
-                    </Link>
-                  </Card.Text>
-                </Card.Body>
-                <Card.Img
-                  variant="bottom"
-                  src="https://hcbyachts.com/wp-content/uploads/2022/03/39_scaled.jpg"
-                />
-              </Card>
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Img
+                    variant="bottom"
+                    src="https://hcbyachts.com/wp-content/uploads/2022/03/39_scaled.jpg"
+                  />
+                </Card>
+              </Link>
             </Col>
 
             <Col xs={12} md={6} lg={6}>
-              <Card className="rounded-0 border-0 p-lg-4 bg-secondary">
-                <Card.Body>
-                  <Card.Title className="text-center fw-bold text-white">
-                    TRADE-IN
-                  </Card.Title>
-                  <Card.Text className="text-center fs-18px text-white">
-                    Contact us today and we will provide you with an accurate
-                    price of what your boat is worth in today’s market.
-                  </Card.Text>
-                  <Card.Text className="text-center fs-18px">
-                    <Link
-                      to={`/services`}
-                      className="text-white fw-bold"
-                      onClick={handleClick}
-                    >
+              <Link
+                to={`/services`}
+                className="text-white fw-bold"
+                onClick={handleClick}
+              >
+                <Card className="rounded-0 border-0 p-lg-4 bg-secondary">
+                  <Card.Body>
+                    <Card.Title className="text-center fw-bold text-white">
+                      TRADE-IN
+                    </Card.Title>
+                    <Card.Text className="text-center fs-18px text-white">
+                      Contact us today and we will provide you with an accurate
+                      price of what your boat is worth in today’s market.
+                    </Card.Text>
+                    <Card.Text className="text-center fs-18px">
                       Learn More{"  "}
                       <i class="fa-solid fa-angles-right"></i>
-                    </Link>
-                  </Card.Text>
-                </Card.Body>
-                <Card.Img
-                  className="py-lg-4"
-                  variant="bottom"
-                  src="https://hcbyachts.com/wp-content/uploads/2023/11/HCB-48-Rendering_White_Side-Transparent-Website-1536x453.png"
-                />
-              </Card>
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Img
+                    className="py-lg-4"
+                    variant="bottom"
+                    src="https://hcbyachts.com/wp-content/uploads/2023/11/HCB-48-Rendering_White_Side-Transparent-Website-1536x453.png"
+                  />
+                </Card>
+              </Link>
             </Col>
           </Row>
         </Container>

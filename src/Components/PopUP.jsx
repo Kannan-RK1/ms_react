@@ -1,17 +1,18 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 //import { Link } from "react-router-dom";
 
 const Popup = () => {
   useEffect(() => {
-    //3 seconds ON
+    // seconds ON
     const showPopup = setTimeout(() => {
       document.getElementById("popup-container").style.display = "block";
-    }, 3000000);
+    }, 7000);
 
-    //7 seconds OFF
+    // seconds OFF
     const closePopup = setTimeout(() => {
       document.getElementById("popup-container").style.display = "none";
-    }, 10000);
+    }, 18000);
 
     return () => {
       clearTimeout(showPopup);
@@ -29,20 +30,20 @@ const Popup = () => {
       >
         <i className="fa-solid fa-circle-xmark text-secondary"></i>
       </span>
-      <img
+      {/* <img
         src="https://hcbyachts.com/wp-content/uploads/2023/11/48-Campeon-Layout-scaled.jpg"
         alt=""
         className="img-fluid"
-      />
+      /> */}
 
-      {/* <div
+      <div
         class="card m-0 border-0 bg-transparent"
         style={{ maxWidth: "840px" }}
       >
         <div class="row g-0 p-2">
           <div class="col-lg-6">
             <img
-              src="https://hcbyachts.com/wp-content/uploads/2023/11/48-Campeon-Layout-scaled.jpg"
+              src="https://hcbyachts.com/wp-content/uploads/2024/03/48-sunrise-scaled.jpg"
               class="img-fluid rounded-start"
               alt="..."
             />
@@ -52,28 +53,26 @@ const Popup = () => {
               <small class="text-primary">
                 <span>FOR THE BOLD</span>
               </small>
-              <h5 class="card-title">INTRODUCING CAMPEÓN</h5>
+              <h5 class="card-title">
+                NEW HCB CAMPEON WINS PRESTIGIOUS INNOVATION AWARD!
+              </h5>
               <p class="card-text mb-1">
-                Campeon is a statement of your boldness, a vessel of innovation,
-                a performer on the water, a masterpiece of custom craftsmanship,
-                and a beacon of quality.
+                “The build quality and attention to detail overshadowed entrants
+                in the category.”
               </p>
-              <p class="card-text">
+              {/* <p class="card-text">
                 Contact us for special pricing and details.
-              </p>
-              <p class="card-text">
-                <Link
-                  to={`/48-campeon`}
-                  className=" text-white btn custom-contact-btn fs-5"
-                >
-                  Pre-Order NOW{"  "}
+              </p> */}
+              <button type="button" class="btn custom-contact-btn btn-sm">
+                <Link to={`/48-campeon`} className=" text-white ">
+                  EXPLORE NOW{"  "}
                   <i class="fa-solid fa-angles-right"></i>
                 </Link>
-              </p>
+              </button>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

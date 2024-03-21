@@ -10,6 +10,7 @@ import NavBar from "../Components/Navbar";
 import SimilarYacht from "../Components/SimilarYacht";
 import YachtDetailsContact from "../Components/YachtDetailsContact";
 import Express_URL from "../Components/Express_URL";
+import { Adsense } from "@ctrl/react-adsense";
 
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
@@ -308,7 +309,7 @@ const YachtDetails = () => {
                   md={12}
                   lg={4}
                   style={{ backgroundColor: "#eeeeee" }}
-                  className="py-5"
+                  className="py-4"
                 >
                   <div className="text-center">
                     {/* Mobile: Display Image 1 */}
@@ -336,12 +337,21 @@ const YachtDetails = () => {
                     {/* Desktop: Display Image 3 */}
                     <Row className="d-none d-lg-flex">
                       <Col>
-                        <img
+                        <small>Advertisement</small>
+                        {/* <img
                           src="https://ayg.s3.us-east-2.amazonaws.com/Black+Video+Centric+Product+Launch+Instagram+Reels+Video+(2).gif"
                           alt="Desktop"
                           style={{ height: "600px" }}
                           className="img-fluid"
-                        />
+                        /> */}
+                        <div className="text-center">
+                          <Adsense
+                            client="ca-pub-6409212221098617"
+                            slot="1372754126"
+                            style={{ width: 300, height: 600, float: "center" }}
+                            format=""
+                          />
+                        </div>
                       </Col>
                     </Row>
                   </div>

@@ -13,7 +13,120 @@ import { classNames } from "../Components/ClassNameCollections";
 import NavBar from "../Components/Navbar";
 import { Link, useLocation } from "react-router-dom";
 import Express_URL from "../Components/Express_URL";
+import { Adsense } from "@ctrl/react-adsense";
+const Advertisement1 = () => (
+  <Col key="advertisement-1" xs={12} md={6} lg={4}>
+    <div
+      class="border-0 rounded-2 pt-2 pb-3 bg-white"
+      style={{
+        boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+      }}
+    >
+      <div className="">
+        <small
+          className="text-start"
+          style={{ paddingLeft: "32px", fontSize: "12px" }}
+        >
+          Advertisement
+        </small>
+        <div className="text-center">
+          {/* <img
+                              src="https://ayg.s3.us-east-2.amazonaws.com/ikon.gif"
+                              alt="Advertisement"
+                              height={"300px"} // Adjust the height of the image as needed
+                              width={"auto"}
+                            /> */}
+          <Adsense
+            client="ca-pub-6409212221098617"
+            slot="1759471789"
+            style={{
+              width: 300,
+              height: 300,
+              float: "center",
+            }}
+            format=""
+          />
+        </div>
+      </div>
+    </div>
+  </Col>
+);
 
+const Advertisement2 = () => (
+  <Col key="advertisement-2" xs={12} md={6} lg={4}>
+    <div
+      class="border-0 rounded-2 pt-2 pb-3 bg-white"
+      style={{
+        boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+      }}
+    >
+      <div className="">
+        <small
+          className="text-start"
+          style={{ paddingLeft: "32px", fontSize: "12px" }}
+        >
+          Advertisement
+        </small>
+        <div className="text-center">
+          {/* <img
+                              src="https://ayg.s3.us-east-2.amazonaws.com/ikon.gif"
+                              alt="Advertisement"
+                              height={"300px"} // Adjust the height of the image as needed
+                              width={"auto"}
+                            /> */}
+          <Adsense
+            client="ca-pub-6409212221098617"
+            slot="2178655050"
+            style={{
+              width: 300,
+              height: 300,
+              float: "center",
+            }}
+            format=""
+          />
+        </div>
+      </div>
+    </div>
+  </Col>
+);
+
+const Advertisement3 = () => (
+  <Col key="advertisement-3" xs={12} md={6} lg={4}>
+    <div
+      class="border-0 rounded-2 pt-2 pb-3 bg-white"
+      style={{
+        boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+      }}
+    >
+      <div className="">
+        <small
+          className="text-start"
+          style={{ paddingLeft: "32px", fontSize: "12px" }}
+        >
+          Advertisement
+        </small>
+        <div className="text-center">
+          {/* <img
+                              src="https://ayg.s3.us-east-2.amazonaws.com/ikon.gif"
+                              alt="Advertisement"
+                              height={"300px"} // Adjust the height of the image as needed
+                              width={"auto"}
+                            /> */}
+          <Adsense
+            client="ca-pub-6409212221098617"
+            slot="6437384363"
+            style={{
+              width: 300,
+              height: 300,
+              float: "center",
+            }}
+            format=""
+          />
+        </div>
+      </div>
+    </div>
+  </Col>
+);
 function Search() {
   const location = useLocation();
   const initialMake = new URLSearchParams(location.search).get("make") || "All";
@@ -117,7 +230,7 @@ function Search() {
     return text.substring(0, maxLength) + "...";
   };
 
-  // Display advertisement after every 6 yachts
+  // Display advertisement after every 8 yachts
   const adInterval = 8;
   const advertisementCol = (
     <Col key="advertisement" xs={12}>
@@ -162,37 +275,6 @@ function Search() {
                   />
                 </Col>
               </Row>
-            </div>
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-  );
-  const advertisementCol1 = (
-    <Col key="advertisement" xs={12} md={6} lg={4}>
-      <Card
-        className="border-0"
-        style={{
-          boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
-        }}
-      >
-        <Card.Body className="px-2 py-4">
-          <Card.Text>
-            <div class="border-0  ">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <img
-                  src="https://ayg.s3.us-east-2.amazonaws.com/HCB+(2).gif"
-                  alt="Advertisement"
-                  height={"305px"} // Adjust the height of the image as needed
-                  width={"auto"}
-                />
-              </div>
             </div>
           </Card.Text>
         </Card.Body>
@@ -427,14 +509,9 @@ function Search() {
                     {advertisementCol}
                   </React.Fragment>
                 )}
-
-              {/* Second advertisement inside every 9 yachts */}
-              {(index + 1) % adInterval === 3 &&
-                index !== yachts.length - 1 && (
-                  <React.Fragment key={`second-advertisement-${index}`}>
-                    {advertisementCol1}
-                  </React.Fragment>
-                )}
+              {index === 2 && <Advertisement1 />}
+              {index === 10 && <Advertisement2 />}
+              {index === 18 && <Advertisement3 />}
             </>
           ))}
         </Row>

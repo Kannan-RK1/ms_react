@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Col, Container, Row, Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Express_URL from "../Components/Express_URL";
-//import ikon from "../Images/ikon.gif";
+import { Adsense } from "@ctrl/react-adsense";
 
 const HomeHCB = () => {
   const [yachts, setYachts] = useState([]);
@@ -145,29 +145,43 @@ const HomeHCB = () => {
                 </Col>
                 {/* Display advertisement after the 3rd card */}
                 {index === 2 && (
-                  <Col xs={12} md={6} lg={4} key="advertisement">
-                    <div
-                      class="border-0 py-4 rounded-2 bg-white"
-                      style={{
-                        boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
-                      }}
-                    >
+                  <>
+                    <Col xs={12} md={6} lg={4} key="advertisement">
                       <div
+                        class="border-0 rounded-2 pt-2 pb-3 bg-white"
                         style={{
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
+                          boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
                         }}
                       >
-                        <img
-                          src="https://ayg.s3.us-east-2.amazonaws.com/ikon.gif"
-                          alt="Advertisement"
-                          height={"305px"} // Adjust the height of the image as needed
-                          width={"auto"}
-                        />
+                        <div className="">
+                          <small
+                            className="text-start"
+                            style={{ paddingLeft: "32px", fontSize: "12px" }}
+                          >
+                            Advertisement
+                          </small>
+                          <div className="text-center">
+                            {/* <img
+                              src="https://ayg.s3.us-east-2.amazonaws.com/ikon.gif"
+                              alt="Advertisement"
+                              height={"300px"} // Adjust the height of the image as needed
+                              width={"auto"}
+                            /> */}
+                            <Adsense
+                              client="ca-pub-6409212221098617"
+                              slot="5288211734"
+                              style={{
+                                width: 300,
+                                height: 300,
+                                float: "center",
+                              }}
+                              format=""
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </Col>
+                    </Col>
+                  </>
                 )}
               </>
             ))}
