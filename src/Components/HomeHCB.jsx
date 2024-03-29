@@ -30,7 +30,7 @@ const HomeHCB = () => {
 
   return (
     <>
-      <div className="banner mb-4">
+      <div className="mob-banner d-md-none mb-4">
         <iframe
           src="https://player.vimeo.com/video/884489762?background=1"
           style={{
@@ -50,8 +50,7 @@ const HomeHCB = () => {
           data-ready="true"
           title="hcb-video"
         ></iframe>
-
-        <div className="banner-text container-fluid col-lg-11">
+        <div className="mob-banner-text container-fluid col-lg-11">
           <div>
             <Row className="g-2 mb-2 d-flex justify-content-center">
               <Col
@@ -87,8 +86,45 @@ const HomeHCB = () => {
         </div>
       </div>
 
+      <div className="banner d-none d-md-block">
+        <div className="banner-content">
+          <iframe
+            src="https://player.vimeo.com/video/884489762?background=1"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            title="hcb-video"
+          ></iframe>
+          <div className="banner-text">
+            <h5 className="text-center fw-bold text-white">
+              Performance. Luxury. Comfort. Athleticism.
+            </h5>
+            <div className="text-center row">
+              <div className="col-6 text-end">
+                <Link
+                  to={`/hcb`}
+                  className="btn btn-light me-2"
+                  onClick={handleClick}
+                >
+                  Explore Models
+                </Link>
+              </div>
+              <div className="col-6 text-start">
+                <Link
+                  to={`/search?make=HCB`}
+                  className="btn btn-dark"
+                  onClick={handleClick}
+                >
+                  View Inventory
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div>
-        <Container fluid className="col-lg-11">
+        <Container fluid className="col-lg-11 pt-md-4 pt-sm-4">
           <h5 className="text-dark fw-bold mb-4">
             Explore Featured HCB Collection
           </h5>
@@ -146,38 +182,32 @@ const HomeHCB = () => {
                 {/* Display advertisement after the 3rd card */}
                 {index === 2 && (
                   <>
-                    <Col xs={12} md={6} lg={4} key="advertisement">
+                    <Col key="advertisement-3" xs={12} md={6} lg={4}>
                       <div
-                        class="border-0 rounded-2 pt-2 pb-3 bg-white"
+                        class="border-0 rounded-2 bg-white "
                         style={{
                           boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
                         }}
                       >
-                        <div className="">
-                          <small
-                            className="text-start"
-                            style={{ paddingLeft: "32px", fontSize: "12px" }}
-                          >
-                            Advertisement
-                          </small>
-                          <div className="text-center">
-                            {/* <img
-                              src="https://ayg.s3.us-east-2.amazonaws.com/ikon.gif"
-                              alt="Advertisement"
-                              height={"300px"} // Adjust the height of the image as needed
-                              width={"auto"}
-                            /> */}
-                            <Adsense
-                              client="ca-pub-6409212221098617"
-                              slot="5288211734"
-                              style={{
-                                width: 300,
-                                height: 300,
-                                float: "center",
-                              }}
-                              format=""
-                            />
-                          </div>
+                        <small
+                          className="text-start"
+                          style={{ paddingLeft: "32px", fontSize: "12px" }}
+                        >
+                          Advertisement
+                        </small>
+                        <div
+                          className="d-flex flex-column justify-content-center align-items-center"
+                          style={{ height: "330px" }}
+                        >
+                          <Adsense
+                            client="ca-pub-6409212221098617"
+                            slot="6437384363"
+                            style={{
+                              width: 300,
+                              height: 300,
+                            }}
+                            format=""
+                          />
                         </div>
                       </div>
                     </Col>

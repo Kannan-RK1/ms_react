@@ -117,7 +117,8 @@ const IKON = () => {
           height: "75px",
         }}
       ></div>
-      <div className="banner mb-4">
+
+      <div className="mob-banner d-md-none mb-4">
         <iframe
           src="https://player.vimeo.com/video/806813966?background=1"
           style={{
@@ -135,123 +136,34 @@ const IKON = () => {
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen=""
           data-ready="true"
-          title="..."
+          title="hcb-video"
         ></iframe>
+        <div className="mob-banner-text container-fluid col-lg-11">
+          <p className="mb-0 fs-5 fw-bold">
+            Performance. Luxury. Comfort. Athleticism.
+          </p>
+        </div>
+      </div>
 
-        <div className="banner-text container-fluid col-lg-11">
-          <div>
-            <p className="mb-3 text-danger fw-bold">
+      <div className="banner d-none d-md-block">
+        <div className="banner-content">
+          <iframe
+            src="https://player.vimeo.com/video/806813966?background=1"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            title="hcb-video"
+          ></iframe>
+          <div className="banner-text">
+            <h5 className="text-center fw-bold text-danger">
               Test the Waters. Find Your iKon Today.
-            </p>
-
-            {/* <Row className="g-2 mb-2">
-              <Col
-                xs={12}
-                md={4}
-                lg={2}
-                className="btn btn-light me-2"
-                type="button"
-              >
-                Explore Models
-              </Col>
-              <Col
-                xs={12}
-                md={4}
-                lg={2}
-                className="btn btn-dark me-2"
-                type="button"
-              >
-                Enquire Now
-              </Col>
-            </Row> */}
+            </h5>
           </div>
         </div>
       </div>
 
       <div>
-        <Container fluid className="col-lg-11">
-          {/* <Row>
-            <Col xs={12} md={6}>
-              <div className="shadow-c1">
-                <div class="card border-0">
-                  <div class="row g-0">
-                    <div class="col-md-7">
-                      <img
-                        src="https://ikonboats.com/wp-content/uploads/2023/04/ikon2023-4.jpg"
-                        class="img-fluid"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col-md-5">
-                      <div class="card-body">
-                        <h6 class="text-dark fw-bold fs-5 text-c1">LX20</h6>
-                        <p class="fs-6 fw-bold mb-1">
-                          Why limit your potential? Upgrade to iKon
-                        </p>
-                        <p class="card-text mb-1">
-                          Length: <span className="fw-bold">20’10”</span>
-                        </p>
-
-                        <div class="d-grid gap-2">
-                          <button class="btn btn-light" type="button">
-                            View Details
-                          </button>
-                          <button class="btn btn-c1" type="button">
-                            Enquire Now
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p className="fs-18px bg-white p-2">
-                  The LX20 by Ikon Boats is a versatile watercraft, blending
-                  cutting-edge design, advanced technology, and exceptional
-                  performance for unforgettable aquatic experiences.
-                </p>
-              </div>
-            </Col>
-            <Col xs={12} md={6}>
-              <div className="shadow-c1">
-                <div class="card border-0">
-                  <div class="row g-0">
-                    <div class="col-md-7">
-                      <img
-                        src="https://ikonboats.com/wp-content/uploads/2023/03/3-scaled.jpeg"
-                        class="img-fluid"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col-md-5">
-                      <div class="card-body">
-                        <h6 class="text-dark fw-bold fs-5 text-c1">LX21</h6>
-                        <p class="fs-6 fw-bold mb-1">
-                          Step up to iKon - Where legacy meets innovation
-                        </p>
-                        <p class="card-text mb-1">
-                          Length: <span className="fw-bold">21’10”</span>
-                        </p>
-
-                        <div class="d-grid gap-2">
-                          <button class="btn btn-light" type="button">
-                            View Details
-                          </button>
-                          <button class="btn btn-c1" type="button">
-                            Enquire Now
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p className="fs-18px bg-white p-2">
-                  The Ikon Boats LX21 boasts innovative design and
-                  state-of-the-art features, delivering thrilling performance
-                  and comfort for remarkable boating adventures on any water.
-                </p>
-              </div>
-            </Col>
-          </Row> */}
+        <Container fluid className="col-lg-11 pt-4">
           <Row className="g-3 gradient-c2" style={{ fontFamily: "Roboto" }}>
             <Col xs={12} md={6}>
               <div className="p-3 m-2">

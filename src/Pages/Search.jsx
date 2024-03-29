@@ -14,39 +14,34 @@ import NavBar from "../Components/Navbar";
 import { Link, useLocation } from "react-router-dom";
 import Express_URL from "../Components/Express_URL";
 import { Adsense } from "@ctrl/react-adsense";
+
 const Advertisement1 = () => (
   <Col key="advertisement-1" xs={12} md={6} lg={4}>
     <div
-      class="border-0 rounded-2 pt-2 pb-3 bg-white"
+      class="border-0 rounded-2 bg-white "
       style={{
         boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
       }}
     >
-      <div className="">
-        <small
-          className="text-start"
-          style={{ paddingLeft: "32px", fontSize: "12px" }}
-        >
-          Advertisement
-        </small>
-        <div className="text-center">
-          {/* <img
-                              src="https://ayg.s3.us-east-2.amazonaws.com/ikon.gif"
-                              alt="Advertisement"
-                              height={"300px"} // Adjust the height of the image as needed
-                              width={"auto"}
-                            /> */}
-          <Adsense
-            client="ca-pub-6409212221098617"
-            slot="1759471789"
-            style={{
-              width: 300,
-              height: 300,
-              float: "center",
-            }}
-            format=""
-          />
-        </div>
+      <small
+        className="text-start"
+        style={{ paddingLeft: "32px", fontSize: "12px" }}
+      >
+        Advertisement
+      </small>
+      <div
+        className="d-flex flex-column justify-content-center align-items-center"
+        style={{ height: "330px" }}
+      >
+        <Adsense
+          client="ca-pub-6409212221098617"
+          slot="1759471789"
+          style={{
+            width: 300,
+            height: 300,
+          }}
+          format=""
+        />
       </div>
     </div>
   </Col>
@@ -55,36 +50,30 @@ const Advertisement1 = () => (
 const Advertisement2 = () => (
   <Col key="advertisement-2" xs={12} md={6} lg={4}>
     <div
-      class="border-0 rounded-2 pt-2 pb-3 bg-white"
+      class="border-0 rounded-2 bg-white "
       style={{
         boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
       }}
     >
-      <div className="">
-        <small
-          className="text-start"
-          style={{ paddingLeft: "32px", fontSize: "12px" }}
-        >
-          Advertisement
-        </small>
-        <div className="text-center">
-          {/* <img
-                              src="https://ayg.s3.us-east-2.amazonaws.com/ikon.gif"
-                              alt="Advertisement"
-                              height={"300px"} // Adjust the height of the image as needed
-                              width={"auto"}
-                            /> */}
-          <Adsense
-            client="ca-pub-6409212221098617"
-            slot="2178655050"
-            style={{
-              width: 300,
-              height: 300,
-              float: "center",
-            }}
-            format=""
-          />
-        </div>
+      <small
+        className="text-start"
+        style={{ paddingLeft: "32px", fontSize: "12px" }}
+      >
+        Advertisement
+      </small>
+      <div
+        className="d-flex flex-column justify-content-center align-items-center"
+        style={{ height: "330px" }}
+      >
+        <Adsense
+          client="ca-pub-6409212221098617"
+          slot="2178655050"
+          style={{
+            width: 300,
+            height: 300,
+          }}
+          format=""
+        />
       </div>
     </div>
   </Col>
@@ -93,36 +82,30 @@ const Advertisement2 = () => (
 const Advertisement3 = () => (
   <Col key="advertisement-3" xs={12} md={6} lg={4}>
     <div
-      class="border-0 rounded-2 pt-2 pb-3 bg-white"
+      class="border-0 rounded-2 bg-white "
       style={{
         boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
       }}
     >
-      <div className="">
-        <small
-          className="text-start"
-          style={{ paddingLeft: "32px", fontSize: "12px" }}
-        >
-          Advertisement
-        </small>
-        <div className="text-center">
-          {/* <img
-                              src="https://ayg.s3.us-east-2.amazonaws.com/ikon.gif"
-                              alt="Advertisement"
-                              height={"300px"} // Adjust the height of the image as needed
-                              width={"auto"}
-                            /> */}
-          <Adsense
-            client="ca-pub-6409212221098617"
-            slot="6437384363"
-            style={{
-              width: 300,
-              height: 300,
-              float: "center",
-            }}
-            format=""
-          />
-        </div>
+      <small
+        className="text-start"
+        style={{ paddingLeft: "32px", fontSize: "12px" }}
+      >
+        Advertisement
+      </small>
+      <div
+        className="d-flex flex-column justify-content-center align-items-center"
+        style={{ height: "330px" }}
+      >
+        <Adsense
+          client="ca-pub-6409212221098617"
+          slot="6437384363"
+          style={{
+            width: 300,
+            height: 300,
+          }}
+          format=""
+        />
       </div>
     </div>
   </Col>
@@ -258,7 +241,7 @@ function Search() {
               <Row className="d-none d-md-flex d-lg-none">
                 <Col>
                   <img
-                    src="https://ayg.s3.us-east-2.amazonaws.com/HCB+(2).gif"
+                    src="https://ayg.s3.us-east-2.amazonaws.com/Explore+Travel.gif"
                     alt="Tablet"
                     className="img-fluid"
                   />

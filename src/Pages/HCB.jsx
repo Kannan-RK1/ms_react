@@ -10,7 +10,8 @@ const HCB = () => {
   return (
     <div style={{ backgroundColor: "#f4f4f4" }}>
       <Navbar />
-      <div className="banner mb-4">
+
+      <div className="mob-banner d-md-none mb-4">
         <iframe
           src="https://player.vimeo.com/video/415942826?background=1"
           style={{
@@ -30,19 +31,75 @@ const HCB = () => {
           data-ready="true"
           title="hcb-video"
         ></iframe>
-        {/* <iframe
-          src="https://player.vimeo.com/video/415942826?h=4c0fcd45de&title=0&byline=0"
-          width="640"
-          height="360"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
-        ></iframe> */}
+        <div className="mob-banner-text container-fluid col-lg-11">
+          {/* <div>
+            <Row className="g-2 mb-2 d-flex justify-content-center">
+              <Col
+                xs={6}
+                md={4}
+                lg={2}
+                className="btn btn-light "
+                type="button"
+              >
+                <Link
+                  to={`/hcb`}
+                  className="text-dark fs-5"
+                  onClick={handleClick}
+                >
+                  Explore Models
+                </Link>
+              </Col>
 
-        <div className="banner-text container-fluid col-lg-11">
-          <div>
-            <p className="mb-0">Performance. Luxury.</p>
-            <p className="">Comfort. Athleticism.</p>
+              <Col xs={6} md={4} lg={2} className="btn btn-dark" type="button">
+                <Link
+                  to={`/search?make=HCB`}
+                  className="text-white fs-5"
+                  onClick={handleClick}
+                >
+                  View Inventory
+                </Link>
+              </Col>
+            </Row>
+          </div> */}
+          <p className="mb-0 fs-5 fw-bold">
+            Performance. Luxury. Comfort. Athleticism.
+          </p>
+        </div>
+      </div>
+
+      <div className="banner d-none d-md-block">
+        <div className="banner-content">
+          <iframe
+            src="https://player.vimeo.com/video/415942826?background=1"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            title="hcb-video"
+          ></iframe>
+          <div className="banner-text">
+            <h5 className="text-center fw-bold text-white">
+              Performance. Luxury. Comfort. Athleticism.
+            </h5>
+            {/* <div className="text-center row">
+              <div className="col-6 text-end">
+                <Link
+                  to={`/hcb`}
+                  className="btn btn-light me-2"
+                  onClick={handleClick}
+                >
+                  Explore Models
+                </Link>
+              </div>
+              <div className="col-6 text-start">
+                <Link
+                  to={`/search?make=HCB`}
+                  className="btn btn-dark"
+                  onClick={handleClick}
+                >
+                  View Inventory
+                </Link>
+              </div>
+            </div> */}
           </div>
         </div>
       </div>

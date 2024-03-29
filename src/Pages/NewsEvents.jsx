@@ -25,7 +25,7 @@ const NewsEvents = () => {
 
       <Container fluid>
         <Row className="g-3 py-3">
-          <Col md={6} lg={4}>
+          {/* <Col md={6} lg={4}>
             <div className="p-3 bg-light">
               <Card className="rounded-0 border-0">
                 <Card.Img
@@ -48,7 +48,7 @@ const NewsEvents = () => {
                 </Card.Body>
               </Card>
             </div>
-          </Col>
+          </Col> */}
 
           <Col md={6} lg={4}>
             <div className="p-3 bg-light">
@@ -77,7 +77,7 @@ const NewsEvents = () => {
               <Card className="rounded-0 border-0">
                 <Card.Img
                   variant="top"
-                  src="https://americanyachtgroup.com/wp-content/uploads/2023/08/hurricane-season.jpeg"
+                  src="https://ayg.s3.us-east-2.amazonaws.com/hurricane-season.jpeg"
                   className="bg-dark rounded-0"
                   height={"250px"}
                 />
@@ -99,7 +99,7 @@ const NewsEvents = () => {
               <Card className="rounded-0 border-0">
                 <Card.Img
                   variant="top"
-                  src="https://americanyachtgroup.com/wp-content/uploads/2023/08/GX010033.MP4.10_24_50_09.Still001-1024x576.jpg"
+                  src="https://ayg.s3.us-east-2.amazonaws.com/hcb-fishing.jpg"
                   className="bg-dark rounded-0"
                   height={"250px"}
                 />

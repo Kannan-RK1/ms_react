@@ -55,7 +55,7 @@ const Speciale = () => {
 
       <div>
         <img
-          src="https://americanyachtgroup.com/wp-content/uploads/2022/10/contact-us-hero.webp"
+          src="https://ayg.s3.us-east-2.amazonaws.com/hero.webp"
           alt=""
           className="img-fluid"
         />
@@ -289,38 +289,32 @@ const Speciale = () => {
                 {/* Display advertisement after the 3rd card */}
                 {index === 2 && (
                   <>
-                    <Col xs={12} md={6} lg={4} key="advertisement">
+                    <Col key="advertisement-3" xs={12} md={6} lg={4}>
                       <div
-                        class="border-0 rounded-2 pt-2 pb-3 bg-white"
+                        class="border-0 rounded-2 bg-white "
                         style={{
                           boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
                         }}
                       >
-                        <div className="">
-                          <small
-                            className="text-start"
-                            style={{ paddingLeft: "32px", fontSize: "12px" }}
-                          >
-                            Advertisement
-                          </small>
-                          <div className="text-center">
-                            {/* <img
-                            src="https://ayg.s3.us-east-2.amazonaws.com/ikon.gif"
-                            alt="Advertisement"
-                            height={"300px"} // Adjust the height of the image as needed
-                            width={"auto"}
-                          /> */}
-                            <Adsense
-                              client="ca-pub-6409212221098617"
-                              slot="4361161968"
-                              style={{
-                                width: 300,
-                                height: 300,
-                                float: "center",
-                              }}
-                              format=""
-                            />
-                          </div>
+                        <small
+                          className="text-start"
+                          style={{ paddingLeft: "32px", fontSize: "12px" }}
+                        >
+                          Advertisement
+                        </small>
+                        <div
+                          className="d-flex flex-column justify-content-center align-items-center"
+                          style={{ height: "330px" }}
+                        >
+                          <Adsense
+                            client="ca-pub-6409212221098617"
+                            slot="4361161968"
+                            style={{
+                              width: 300,
+                              height: 300,
+                            }}
+                            format=""
+                          />
                         </div>
                       </div>
                     </Col>
